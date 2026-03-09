@@ -3,67 +3,344 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>店長紹介 | 穂高駅前アウトドア</title>
-  <meta name="description" content="店長紹介とおすすめ装備のセクション">
+  <title>穂高駅前アウトドア | 登山口の駅前にあるアウトドアショップ</title>
+  <meta name="description" content="登山口の駅前にあるアウトドアショップ。電車を待つ時間にふらっと立ち寄れ、店先からは穂高岳連峰を望めます。店長が厳選した登山・ハイキング用品をご案内します。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-main">穂高駅前アウトドア</span>
+        <span class="logo-sub">Mountain & Hiking Gear</span>
+      </a>
+      <nav class="site-nav" aria-label="ページ内ナビゲーション">
+        <ul>
+          <li><a href="#concept">CONCEPT</a></li>
+          <li><a href="#about">ABOUT SHOP</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#owner">OWNER</a></li>
+          <li><a href="#items">ITEMS</a></li>
+          <li><a href="#gallery">PHOTOS</a></li>
+          <li><a href="#access">ACCESS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main class="page-wrap">
-  <section class="owner-section">
-    <div class="container owner-grid">
-      <div class="owner-visual">
-        <div class="owner-photo-card">
-          <div class="mountain-bg"></div>
-          <img src="images/owner.png" alt="店長シルエット" class="owner-photo">
+  <main id="top">
+    <section class="hero">
+      <div class="hero-slider" aria-label="季節ごとの山と店舗の風景スライダー">
+        <div class="hero-slide slide1 is-active"></div>
+        <div class="hero-slide slide2"></div>
+        <div class="hero-slide slide3"></div>
+        <div class="hero-slide slide4"></div>
+        <div class="hero-slide slide5"></div>
+      </div>
+
+      <button class="hero-arrow hero-arrow-prev" type="button" aria-label="前の画像">
+        <span aria-hidden="true">‹</span>
+      </button>
+      <button class="hero-arrow hero-arrow-next" type="button" aria-label="次の画像">
+        <span aria-hidden="true">›</span>
+      </button>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow">登山口の駅前にある、山へ向かう人のための店</p>
+        <h1>山へ向かう、<br>その一歩前に。</h1>
+        <p class="hero-lead">
+          電車を待つ時間に、ふらっと立ち寄れる。<br>
+          店先から穂高岳連峰を望みながら、次の山行に必要な道具と出会えるアウトドアショップです。
+        </p>
+
+        <div class="hero-actions">
+          <a href="#items" class="btn btn-primary">おすすめを見る</a>
+          <a href="#access" class="btn btn-secondary">アクセス</a>
         </div>
       </div>
 
-      <div class="owner-copy">
-        <p class="section-label">STORE OWNER</p>
-        <h1 class="section-title">山を知る店長が、<br>道具選びをお手伝いします。</h1>
-        <p class="owner-name">店長　Kei</p>
-        <p class="owner-tagline">山で本当に使える道具を、わかりやすく丁寧に。</p>
+      <div class="hero-indicators" aria-label="ヘッダー画像切り替え">
+        <button class="indicator is-active" type="button" aria-label="1枚目の画像を表示" data-slide="0"></button>
+        <button class="indicator" type="button" aria-label="2枚目の画像を表示" data-slide="1"></button>
+        <button class="indicator" type="button" aria-label="3枚目の画像を表示" data-slide="2"></button>
+        <button class="indicator" type="button" aria-label="4枚目の画像を表示" data-slide="3"></button>
+        <button class="indicator" type="button" aria-label="5枚目の画像を表示" data-slide="4"></button>
+      </div>
+    </section>
+
+    <section id="concept" class="section section-light fade-section">
+      <div class="container narrow">
+        <p class="section-label">CONCEPT</p>
+        <h2 class="section-title">駅前だから、山の前にも帰り道にも立ち寄れる。</h2>
         <p class="section-text">
-          登山やハイキングを実際に楽しむ店長が、使用感や山行スタイルに合わせて装備選びをサポートします。
-          初めての登山から、より快適な買い替え相談まで、気軽に話せる店づくりを大切にしています。
+          お店は登山口となる駅前の立地。朝の出発前に忘れ物を見つけたときも、下山後に次の道具を見たくなったときも、
+          気軽に立ち寄れる距離にあります。店先からは穂高岳連峰が見え、山の空気を感じながら道具選びを楽しめます。
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="gear-section">
-    <div class="container">
-      <p class="section-label">RECOMMENDED GEAR</p>
-      <h2 class="section-title">店長おすすめ装備</h2>
-
-      <div class="gear-grid">
-        <article class="gear-card">
-          <h3>日帰り向けバックパック</h3>
-          <p>背負いやすさと軽さを重視。電車移動でも扱いやすい容量のモデルがおすすめです。</p>
-        </article>
-
-        <article class="gear-card">
-          <h3>歩きやすいトレッキングシューズ</h3>
-          <p>舗装路から登山道まで対応しやすい、安定感のある一足を選ぶと快適です。</p>
-        </article>
-
-        <article class="gear-card">
-          <h3>防風・防寒ウェア</h3>
-          <p>山の天候変化に対応しやすい薄手の防風シェルは、季節を問わず活躍します。</p>
-        </article>
-
-        <article class="gear-card">
-          <h3>小物・携行ギア</h3>
-          <p>ヘッドライト、ボトル、行動食まわりなど、小さな装備が山行の快適さを左右します。</p>
-        </article>
+    <section id="about" class="section section-light fade-section">
+      <div class="container split about-split">
+        <div class="about-image">
+          <img src="images/shop-about.jpg" alt="アウトドアショップ外観">
+        </div>
+        <div class="about-copy">
+          <p class="section-label">ABOUT SHOP</p>
+          <h2 class="section-title align-left">山へ向かう人のための、駅前アウトドアショップ</h2>
+          <p class="section-text align-left">
+            穂高の登山口駅前にある小さなアウトドアショップ。
+            登山へ向かう朝、下山した帰り道、電車を待つ少しの時間に立ち寄れる場所です。
+          </p>
+          <p class="section-text align-left">
+            店長自身も登山を楽しむハイカー。実際に山で使って良いと感じたもの、
+            本当に役立つ道具だけを厳選して店頭に並べています。
+          </p>
+          <p class="section-text align-left">
+            初めての登山装備から、こだわりのギア選びまで。
+            気軽に相談できるアウトドアショップです。
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
+    <section id="features" class="section section-accent fade-section">
+      <div class="container">
+        <p class="section-label">FEATURES</p>
+        <h2 class="section-title">この店ならではの3つの魅力</h2>
+        <div class="feature-grid">
+          <article class="card feature-card hover-panel">
+            <div class="card-number">01</div>
+            <h3>駅前の立ち寄りやすさ</h3>
+            <p>電車を待つ時間にふらっと寄れる、登山前後にちょうどいい場所。必要なものを、必要なタイミングで選べます。</p>
+          </article>
+          <article class="card feature-card hover-panel">
+            <div class="card-number">02</div>
+            <h3>穂高岳を望む景色</h3>
+            <p>店先から見える穂高岳連峰。山への期待感が高まるロケーションも、この店の魅力のひとつです。</p>
+          </article>
+          <article class="card feature-card hover-panel">
+            <div class="card-number">03</div>
+            <h3>店長の確かな目利き</h3>
+            <p>店長自身が登山やハイキングを楽しみながら、本当に使いたいと思える道具だけをセレクトしています。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="owner" class="section section-light fade-section">
+      <div class="container split">
+        <div class="split-copy">
+          <p class="section-label">OWNER</p>
+          <h2 class="section-title align-left">山を知る店長が、気軽に相談に乗ります。</h2>
+          <p class="section-text align-left">
+            店長自ら登山やハイキングを楽しんでいるからこそ、使う場面や山行スタイルに合わせた提案ができます。
+            初めてのハイキングから本格的な縦走まで、お客様のご要望に沿って無理なく選べるよう丁寧にアドバイスします。
+          </p>
+          <ul class="point-list">
+            <li>初心者向けの装備相談</li>
+            <li>日帰り・小屋泊・縦走ごとの道具提案</li>
+            <li>買い足し・買い替えの相談も歓迎</li>
+          </ul>
+        </div>
+        <div class="owner-panel">
+          <div class="owner-box">
+            <img src="images/owner.jpg" alt="店長写真" class="owner-photo">
+            <p class="owner-kicker">Store Owner's View</p>
+            <h3>「流行より、山でちゃんと使えるものを。」</h3>
+            <p>
+              見た目だけではなく、背負いやすさ、歩きやすさ、使いやすさ。
+              実際の山で役立つかどうかを大切にして商品を選んでいます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="items" class="section section-dark fade-section">
+      <div class="container">
+        <p class="section-label section-label-light">SELECTED ITEMS</p>
+        <h2 class="section-title title-light">店長セレクトのこだわりアイテム</h2>
+        <div class="item-grid">
+          <article class="card item-card hover-panel">
+            <img src="images/item-backpack.jpg" alt="バックパックの商品写真" class="item-photo">
+            <div class="item-copy">
+              <span class="tag">Backpack</span>
+              <h3>バックパック</h3>
+              <p>日帰りハイクから山小屋泊まで。背負いやすさと容量のバランスを重視したモデルを厳選。</p>
+            </div>
+          </article>
+          <article class="card item-card hover-panel">
+            <img src="images/item-wear.jpg" alt="ウェアの商品写真" class="item-photo">
+            <div class="item-copy">
+              <span class="tag">Wear</span>
+              <h3>ウェア</h3>
+              <p>歩行中の快適さとレイヤリングのしやすさを大切にした、季節に合わせやすいウェアを提案。</p>
+            </div>
+          </article>
+          <article class="card item-card hover-panel">
+            <img src="images/item-shoes.jpg" alt="シューズの商品写真" class="item-photo">
+            <div class="item-copy">
+              <span class="tag">Shoes</span>
+              <h3>シューズ</h3>
+              <p>歩く山域や足の形に合わせた選び方をアドバイス。履き心地の違いも丁寧にご案内します。</p>
+            </div>
+          </article>
+          <article class="card item-card hover-panel">
+            <img src="images/item-gear.jpg" alt="小物とギアの商品写真" class="item-photo">
+            <div class="item-copy">
+              <span class="tag">Small Gear</span>
+              <h3>小物・ギア</h3>
+              <p>ボトル、ヘッドライト、行動食まわりなど、山行を快適にする小さな道具も充実しています。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section section-light fade-section">
+      <div class="container">
+        <p class="section-label">PHOTO GALLERY</p>
+        <h2 class="section-title">商品写真セクション</h2>
+        <p class="section-text gallery-lead">
+          店頭の雰囲気や商品写真を掲載するためのセクションです。実際の写真に差し替えるだけでそのまま使えます。
+        </p>
+        <div class="gallery-grid">
+          <figure class="gallery-card"><img src="images/item-backpack.jpg" alt="バックパックの商品写真"><figcaption>バックパック</figcaption></figure>
+          <figure class="gallery-card"><img src="images/item-wear.jpg" alt="ウェアの商品写真"><figcaption>ウェア</figcaption></figure>
+          <figure class="gallery-card"><img src="images/item-shoes.jpg" alt="シューズの商品写真"><figcaption>シューズ</figcaption></figure>
+          <figure class="gallery-card"><img src="images/item-gear.jpg" alt="ギアの商品写真"><figcaption>小物・ギア</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-instagram fade-section">
+      <div class="container instagram-box">
+        <div>
+          <p class="section-label">INSTAGRAM</p>
+          <h2 class="section-title align-left">イベント情報や入荷情報、店頭の雰囲気を発信中</h2>
+          <p class="section-text align-left">新入荷アイテムや季節のおすすめ、店内の様子などをInstagramでもご案内できます。</p>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram-btn" aria-label="Instagramを見る">
+          <span class="instagram-icon" aria-hidden="true"></span>
+          <span>Instagramを見る</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="access" class="section section-light fade-section">
+      <div class="container split access-split">
+        <div class="split-copy">
+          <p class="section-label">ACCESS</p>
+          <h2 class="section-title align-left">登山口の駅前で、お待ちしています。</h2>
+          <p class="section-text align-left">
+            電車の待ち時間にも立ち寄りやすい、駅前のアウトドアショップです。
+            登山前のひと準備にも、下山後の立ち寄りにもご利用ください。
+          </p>
+          <dl class="info-list">
+            <div><dt>店舗名</dt><dd>穂高駅前アウトドア</dd></div>
+            <div><dt>住所</dt><dd>〒000-0000 長野県○○市○○駅前1-2-3</dd></div>
+            <div><dt>営業時間</dt><dd>8:00 - 18:00</dd></div>
+            <div><dt>定休日</dt><dd>不定休</dd></div>
+            <div><dt>お問い合わせ</dt><dd>00-0000-0000</dd></div>
+            <div><dt>Instagram</dt><dd>@your_outdoor_shop</dd></div>
+          </dl>
+        </div>
+        <div class="map-card">
+          <iframe src="https://www.google.com/maps?q=%E7%A9%82%E9%AB%98%E9%A7%85&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
+          <p class="map-note">※ 現在は「穂高駅」で仮設定しています。実店舗の住所に合わせて差し替えてください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">穂高駅前アウトドア</p>
+        <p class="footer-copy">山へ向かう、その一歩前に。</p>
+      </div>
+      <p class="copyright">© Hotaka Ekimae Outdoor</p>
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.18 });
+    sections.forEach((section) => observer.observe(section));
+
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.indicator');
+    const prevBtn = document.querySelector('.hero-arrow-prev');
+    const nextBtn = document.querySelector('.hero-arrow-next');
+    const hero = document.querySelector('.hero');
+    const totalSlides = slides.length;
+    const slideDuration = 8000;
+    let currentSlide = 0;
+    let autoTimer;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function showSlide(index) {
+      currentSlide = (index + totalSlides) % totalSlides;
+      slides.forEach((slide, i) => slide.classList.toggle('is-active', i === currentSlide));
+      dots.forEach((dot, i) => dot.classList.toggle('is-active', i === currentSlide));
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function restartAutoPlay() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(nextSlide, slideDuration);
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+        restartAutoPlay();
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      restartAutoPlay();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      restartAutoPlay();
+    });
+
+    hero.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    hero.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchEndX - touchStartX;
+      if (Math.abs(diff) > 40) {
+        if (diff < 0) nextSlide();
+        else prevSlide();
+        restartAutoPlay();
+      }
+    }, { passive: true });
+
+    showSlide(0);
+    restartAutoPlay();
+  </script>
 </body>
 </html>
