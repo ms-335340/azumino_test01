@@ -57,7 +57,6 @@
           電車を待つ時間に、ふらっと立ち寄れる。<br>
           店先から穂高岳連峰を望みながら、次の山行に必要な道具と出会えるアウトドアショップです。
         </p>
-
         <div class="hero-actions">
           <a href="#items" class="btn btn-primary">おすすめを見る</a>
           <a href="#access" class="btn btn-secondary">アクセス</a>
@@ -93,16 +92,13 @@
           <p class="section-label">ABOUT SHOP</p>
           <h2 class="section-title align-left">山へ向かう人のための、駅前アウトドアショップ</h2>
           <p class="section-text align-left">
-            穂高の登山口駅前にある小さなアウトドアショップ。
-            登山へ向かう朝、下山した帰り道、電車を待つ少しの時間に立ち寄れる場所です。
+            穂高の登山口駅前にある小さなアウトドアショップ。登山へ向かう朝、下山した帰り道、電車を待つ少しの時間に立ち寄れる場所です。
           </p>
           <p class="section-text align-left">
-            店長自身も登山を楽しむハイカー。実際に山で使って良いと感じたもの、
-            本当に役立つ道具だけを厳選して店頭に並べています。
+            店長自身も登山を楽しむハイカー。実際に山で使って良いと感じたもの、本当に役立つ道具だけを厳選して店頭に並べています。
           </p>
           <p class="section-text align-left">
-            初めての登山装備から、こだわりのギア選びまで。
-            気軽に相談できるアウトドアショップです。
+            初めての登山装備から、こだわりのギア選びまで。気軽に相談できるアウトドアショップです。
           </p>
         </div>
       </div>
@@ -115,25 +111,25 @@
         <div class="feature-grid">
           <article class="card feature-card hover-panel">
             <div class="card-number">01</div>
+            <h3>店長の確かな目利き</h3>
+            <p>店長自身が登山やハイキングを楽しみながら、本当に使いたいと思える道具だけをセレクトしています。</p>
+          </article>
+          <article class="card feature-card hover-panel">
+            <div class="card-number">02</div>
             <h3>駅前の立ち寄りやすさ</h3>
             <p>電車を待つ時間にふらっと寄れる、登山前後にちょうどいい場所。必要なものを、必要なタイミングで選べます。</p>
           </article>
           <article class="card feature-card hover-panel">
-            <div class="card-number">02</div>
+            <div class="card-number">03</div>
             <h3>穂高岳を望む景色</h3>
             <p>店先から見える穂高岳連峰。山への期待感が高まるロケーションも、この店の魅力のひとつです。</p>
-          </article>
-          <article class="card feature-card hover-panel">
-            <div class="card-number">03</div>
-            <h3>店長の確かな目利き</h3>
-            <p>店長自身が登山やハイキングを楽しみながら、本当に使いたいと思える道具だけをセレクトしています。</p>
           </article>
         </div>
       </div>
     </section>
 
     <section id="owner" class="section section-light fade-section">
-      <div class="container split">
+      <div class="container split owner-split">
         <div class="split-copy">
           <p class="section-label">OWNER</p>
           <h2 class="section-title align-left">山を知る店長が、気軽に相談に乗ります。</h2>
@@ -147,10 +143,13 @@
             <li>買い足し・買い替えの相談も歓迎</li>
           </ul>
         </div>
+
         <div class="owner-panel">
           <div class="owner-box">
             <img src="images/owner.jpg" alt="店長写真" class="owner-photo">
             <p class="owner-kicker">Store Owner's View</p>
+            <p class="owner-name">店長 / 山歩き好きのギアセレクター</p>
+            <p class="owner-one-line">山で本当に役立つ道具を、わかりやすく丁寧にご案内します。</p>
             <h3>「流行より、山でちゃんと使えるものを。」</h3>
             <p>
               見た目だけではなく、背負いやすさ、歩きやすさ、使いやすさ。
@@ -295,13 +294,8 @@
       dots.forEach((dot, i) => dot.classList.toggle('is-active', i === currentSlide));
     }
 
-    function nextSlide() {
-      showSlide(currentSlide + 1);
-    }
-
-    function prevSlide() {
-      showSlide(currentSlide - 1);
-    }
+    function nextSlide() { showSlide(currentSlide + 1); }
+    function prevSlide() { showSlide(currentSlide - 1); }
 
     function restartAutoPlay() {
       clearInterval(autoTimer);
